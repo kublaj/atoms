@@ -1,0 +1,32 @@
+{
+  "name": "blaze-atoms",
+  "version": "0.1.0",
+  "description": "Blaze Atoms - JavaScript Custom Elements",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BlazeCSS/atoms.git"
+  },
+  "author": "Gregory Pratt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BlazeCSS/atoms/issues"
+  },
+  "homepage": "http://blazecss.com",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "stencil build --prerender",
+    "dev": "sd concurrent \"stencil build --dev --watch\" \"stencil-dev-server\" ",
+    "serve": "stencil-dev-server",
+    "start": "npm run dev"
+  },
+  "dependencies": {
+    "@stencil/core": "next",
+    "@stencil/router": "0.0.9"
+  },
+  "devDependencies": {
+    "@stencil/dev-server": "latest",
+    "@stencil/utils": "latest"
+  }
+}
